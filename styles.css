@@ -101,17 +101,23 @@ input[type=submit]:hover{
     background-color: #f1d752;
 }
 
-/* Media Queries 
-input[type=email]:valid{
+input:valid{
     border-color: #f3ca00;
     outline: #f3ca00;
 }
 
-input[type=email]:invalid{
-    border-color: #f71d15;
-    outline: #f71d15;
+input:invalid{
+    border-color: #f71d15 !important;
+    outline: #f71d15 !important;
 }
-*/
+
+
+
+span{
+    font-size: 0.8rem;
+    color: #f71d15;
+    margin-left: 12px;
+}
 
 
 
