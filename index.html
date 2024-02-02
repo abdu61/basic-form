@@ -28,41 +28,45 @@
                 <div class="rowflex">
                 <div>    
                 <label for="firstname">First Name</label><br>
-                <input type="text" name="firstname" id="firstname" required>
+                <input type="text" name="firstname" id="firstname"><br>
+                <span id="fNameError" class="error"></span>
                 </div>
 
                 <div>
                 <label for="lastname">Last Name</label><br>
-                <input type="text" name="lastname" id="lastname" required>
+                <input type="text" name="lastname" id="lastname">
                 </div>
                 </div>
 
                 <div class="rowflex">
                 <div>
-                <label for="email">Email</label><br>
-                <input type="email" name="email" id="email" required>
+                <label for="email">Email *</label><br>
+                <input type="email" name="email" id="email" required><br>
+                <span id="emailError" class="error"></span>
                 </div>
 
                 <div>
                 <label for="phone">Phone Number</label><br>
-                <input type="tel" name="phone" id="phone" required>
+                <input type="tel" name="phone" id="phone">
                 </div>
                 </div>
 
                 <div class="rowflex">
                 <div>
                 <label for="password">Password</label><br>
-                <input type="password" name="password" id="password" required>
+                <input type="password" name="password" id="password" required><br>
+                <span id="passwordError" class="error"></span>
                 </div>
                 
                 <div>
                 <label for="password">Confirm Password</label><br>
-                <input type="password" name="password" id="password" required>
+                <input type="password" name="password" id="confirmPassword" required><br>
+                <span id="confirmPasswordError" class="error"></span>
                 </div>
                 </div>
             </div>
 
-            <input type="submit" value="Create Account">
+            <input type="submit" class="account">
             <p>Already have an account? <a href="#">Login</a></p>
             
         </form>
