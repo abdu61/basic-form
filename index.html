@@ -3,48 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="Javascript.js" defer></script>
 
+
     <title>Sign Up - ShoeBee </title>
 </head>
+
 <body>
     <div class="container">
-    <div class="header">
-        <img src="images/light-shoe.jpg" alt="Shoebee Background" class="background">
-    </div>
+    <header>
+        <img src="images/light-shoe.jpg" alt="Shoebee Background">
+        <h2>SHOEBEE</h2>
+    </header>
     
-    <div class="main">
-    <h2>Get Started</h2>
-    <form action="#" method="post">
+    <main>
+        <h2 class="heading">Get Started</h2>
+        <form action="#" method="post">
+            <div class="inputflex">
+                
+                <div class="rowflex">
+                <div>    
+                <label for="firstname">First Name</label><br>
+                <input type="text" name="firstname" id="firstname" required>
+                </div>
 
-        <label for="firstname">First Name</label>
-        <input type="text" name="firstname" id="firstname" required>
+                <div>
+                <label for="lastname">Last Name</label><br>
+                <input type="text" name="lastname" id="lastname" required>
+                </div>
+                </div>
 
-        <label for="lastname">Last Name</label>
-        <input type="text" name="lastname" id="lastname" required>
-        <br><br>
+                <div class="rowflex">
+                <div>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" required>
+                </div>
 
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" required>
+                <div>
+                <label for="phone">Phone Number</label><br>
+                <input type="tel" name="phone" id="phone" required>
+                </div>
+                </div>
 
-        <label for="phone">Phone Number</label>
-        <input type="tel" name="phone" id="phone" required>
-        <br><br>
+                <div class="rowflex">
+                <div>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password" required>
+                </div>
+                
+                <div>
+                <label for="password">Confirm Password</label><br>
+                <input type="password" name="password" id="password" required>
+                </div>
+                </div>
+            </div>
 
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" required>
-
-        <label for="password">Confirm Password</label>
-        <input type="password" name="password" id="password" required>
-        <br><br>
-
-        <input type="submit" value="Create Account">
-        <p>Already have an account? <a href="#">Login</a></p>
-        
-    </form>
-    </div>
-    </div>
+            <input type="submit" value="Create Account">
+            <p>Already have an account? <a href="#">Login</a></p>
+            
+        </form>
+    </main>
+</div>
     
 </body>
+
 </html>
