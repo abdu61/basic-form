@@ -7,6 +7,7 @@ html, body, .container{
     margin: 0;
     padding: 0;
     height: 100vh;
+    width: auto;
     font-family: 'Poppins', sans-serif;
     background-color: var(--backgroundcolor);
 }
@@ -15,17 +16,16 @@ html, body, .container{
     display: flex;
 }
 
-header img{
-    position: relative;
-    width: auto;
-    object-fit: fill;
-    align-items: center;
-    border-radius: 0rem 2rem 2rem 0rem;
+header{
+    flex: 1;
+    display: flex;
 }
 
-header{
-    flex-grow: 1 1 0;
-    display: flex;
+header img{
+    width: 100%;
+    object-fit:cover;
+    align-items: center;
+    border-radius: 0rem 2rem 2rem 0rem;
 }
 
 header h2{
