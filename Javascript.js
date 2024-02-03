@@ -17,11 +17,11 @@ let passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
 firstName.addEventListener('input', function() {
     if(firstName.value.length <= 0) {
         firstNameError.innerHTML = '* First Name is required';
-        firstName.setCustomValidity("mm");
+        firstName.setCustomValidity("Inavlid First Name");
     }
     else if(firstName.value.length < 2) {
         firstNameError.innerHTML = 'First Name must be at least 2 characters';
-        firstName.setCustomValidity("mm");
+        firstName.setCustomValidity("Inavlid First Name");
     } 
     else {
         firstNameError.innerHTML = '';
@@ -32,11 +32,11 @@ firstName.addEventListener('input', function() {
 email.addEventListener('input', function() {
     if (email.value.length <= 0) {
         emailError.innerHTML = '* Email is required';
-        email.setCustomValidity("mm");
+        email.setCustomValidity("Invalid Email");
     }
     else if(!emailRegex.test(email.value)) {
         emailError.innerHTML = 'Please enter a valid email';
-        email.setCustomValidity("mm");
+        email.setCustomValidity("Invalid Email");
     } else {
         emailError.innerHTML = '';
         email.setCustomValidity("");
@@ -46,11 +46,11 @@ email.addEventListener('input', function() {
 password.addEventListener('input', function() {
     if (password.value.length <= 0) {
         passwordError.innerHTML = '* Password is required';
-        password.setCustomValidity("mm"); //red box styling - makes css input:valid to input:invalid
+        password.setCustomValidity("Invalid Password"); //red box styling - makes css input:valid to input:invalid
     }
     else if(!passwordRegex.test(password.value)) {
         passwordError.innerHTML = 'Password must contain at least <br>8 characters, 1 number, 1 uppercase and 1 lowercase';
-        password.setCustomValidity("mm");
+        password.setCustomValidity("Invalid Password");
     } else {
         passwordError.innerHTML = '';
         password.setCustomValidity("");
@@ -60,11 +60,11 @@ password.addEventListener('input', function() {
 confirmPassword.addEventListener('input', function() {
     if (confirmPassword.value.length <= 0) {
         confirmPasswordError.innerHTML = '* Confirm Password is required';
-        confirmPassword.setCustomValidity("mm");
+        confirmPassword.setCustomValidity("Invalid Confirm Password");
     }
     else if(confirmPassword.value != password.value) {
         confirmPasswordError.innerHTML = 'Passwords do not match';
-        confirmPassword.setCustomValidity("mm");
+        confirmPassword.setCustomValidity("Invalid Confirm Password");
     } else {
         confirmPasswordError.innerHTML = '';
         confirmPassword.setCustomValidity("");
